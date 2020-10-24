@@ -3,7 +3,7 @@
     
 <!-- 페이징을 위한 변수설정 -->
 	<c:choose>
-		<c:when test="${empty param.keyword} }">
+		<c:when test="${empty param.keyword}">
 			<c:set var = "pagePrev" value="/post?cmd=list&page=${param.page-1}"/>
 			<c:set var = "pageNext" value="/post?cmd=list&page=${param.page+1}"/>
 		</c:when>

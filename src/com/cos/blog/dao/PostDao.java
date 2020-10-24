@@ -22,7 +22,7 @@ public class PostDao {
 	private PostDao() {}
 	
 	public int 글갯수(String keyword) {
-		String sql="SELECT count(*) FROM post WHRE title like ? OR content like ?";
+		String sql="SELECT count(*) FROM post WHERE title like ? OR content like ?";
 		Connection conn= DBConn.getInstance();
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
