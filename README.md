@@ -1,6 +1,9 @@
 ## 블로그 프로젝트
 
 ### 데이터베이스 테이블 스키마(구조)
+create user 'cos'@'%' identified by 'bitc5600';
+GRANT ALL PRIVILEGES ON *.* TO 'cos'@'%';
+create database cos;
 
 ```sql
 CREATE TABLE users(
